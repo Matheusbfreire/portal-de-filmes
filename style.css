@@ -17,6 +17,10 @@ body {
     margin-bottom: 20px;
 }
 
+.lancamentos_media {
+    display: none;
+}
+
 /* Index - Inicio */
 
 .carousel {
@@ -405,6 +409,30 @@ section .section-title {
 @media (min-width: 768px) {
     .bd-placeholder-img-lg {
         font-size: 3.5rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .carousel,
+    .slide {
+        display: none;
+    }
+
+    .lancamentos_media {
+        display: block;
+        max-width: 100%;
+        height: 500px;
+    }
+
+    .lancamentos_media img {
+        padding-bottom: 5px;
+    }
+
+    .teste {
+        background-image: url(img/banner1.jpg);
+        width: 100%;
+        height: 150px;
     }
 }
 
