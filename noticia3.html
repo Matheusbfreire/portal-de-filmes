@@ -12,18 +12,24 @@
     <header class="container header">
         <img class="col-1 logo" src="img/logo.png">
         <div class="container_nav">
+            <input type="checkbox" id="menuToggle">
+                <label for="menuToggle" class="menu-icon">
+                    <i class="fa fa-bars"></i>
+                    <i class="fa fa-times-circle"></i>
+                </label>
+            </input>
             <nav class="nav menu1">
                 <a class="nav-link active" href="index.html">HOME</a>
-                <a class="nav-link" href="index.html#lancamento">LANÇAMENTOS</a>
-                <a class="nav-link" href="index.html#destaque">DESTAQUE</a>
-                <a class="nav-link" href="index.html#entrevistamakingof">ENTREVISTAS&<br>MAKING OF</a>
-                <a class="nav-link" href="index.html#novidades">NOVIDADES</a>
+                <a class="nav-link" href="#lancamento">LANÇAMENTOS</a>
+                <a class="nav-link" href="#destaque">DESTAQUE</a>
+                <a class="nav-link" href="#entrevistamakingof">ENTREVISTAS&<br>MAKING OF</a>
+                <a class="nav-link" href="#novidades">NOVIDADES</a>
                 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
                     integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
                     crossorigin="anonymous">
                 <input type="search" class="search_box">
                 <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search"
-                class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                class="svg-inline--fa fa-search fa-w-16 search-icon" role="img" xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512">
                 <path fill="currentColor"
                     d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z">
@@ -68,8 +74,11 @@
     </main>
 
     <footer class="container footer">
-        <p class="float-end"><a href="#">Back to top</a></p>
-        <p>Copyright 2021 - Disciplina de Desenvolvimento de Interfaces Web - ICEI <a href="https://www.pucminas.br/institucional/Paginas/a-puc-minas.aspx" target="_blank">PUC Minas</a></p>
+        <div class="row">
+            <p class="col-10">Copyright 2021 - Disciplina de Desenvolvimento de Interfaces Web - ICEI <a
+                href="https://www.pucminas.br/institucional/Paginas/a-puc-minas.aspx" target="_blank">PUC Minas</a></p>
+            <img src="img/logo.png" class="col-2 logobx">
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>

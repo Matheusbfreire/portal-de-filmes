@@ -29,28 +29,34 @@
 
 <body>
     <header class="container header">
-            <img class="col-1 logo" src="img/logo.png">
-            <div class="container_nav">
-                <nav class="nav menu1">
-                    <a class="nav-link active" href="index.html">HOME</a>
-                    <a class="nav-link" href="index.html#lancamento">LANÇAMENTOS</a>
-                    <a class="nav-link" href="index.html#destaque">DESTAQUE</a>
-                    <a class="nav-link" href="index.html#entrevistamakingof">ENTREVISTAS&<br>MAKING OF</a>
-                    <a class="nav-link" href="index.html#novidades">NOVIDADES</a>
-                    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
-                        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
-                        crossorigin="anonymous">
-                    <input type="search" class="search_box">
-                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search"
-                    class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 512 512">
-                    <path fill="currentColor"
-                        d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z">
-                    </path>
-                    </svg>
-                </nav>
-            </div>
-        </header>
+        <img class="col-1 logo" src="img/logo.png">
+        <div class="container_nav">
+            <input type="checkbox" id="menuToggle">
+                <label for="menuToggle" class="menu-icon">
+                    <i class="fa fa-bars"></i>
+                    <i class="fa fa-times-circle"></i>
+                </label>
+            </input>
+            <nav class="nav menu1">
+                <a class="nav-link active" href="index.html">HOME</a>
+                <a class="nav-link" href="#lancamento">LANÇAMENTOS</a>
+                <a class="nav-link" href="#destaque">DESTAQUE</a>
+                <a class="nav-link" href="#entrevistamakingof">ENTREVISTAS&<br>MAKING OF</a>
+                <a class="nav-link" href="#novidades">NOVIDADES</a>
+                <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+                    integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+                    crossorigin="anonymous">
+                <input type="search" class="search_box">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search"
+                class="svg-inline--fa fa-search fa-w-16 search-icon" role="img" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512">
+                <path fill="currentColor"
+                    d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z">
+                </path>
+                </svg>
+            </nav>
+        </div>
+    </header>
 
     <main class="main">
         <a name="lancamento" id="lancamento"></a>
@@ -73,7 +79,7 @@
                     <div class="container">
                         <div class="carousel-caption text-start">
                             <h1>Guardiões da Galáxia Vol.2</h1>
-                            <p><a class="btn btn-lg btn-primary" href="#">Saiba Mais</a></p>
+                            <p><a class="btn btn-lg btn-primary" href="guardioes-da-galaxia-trailer.html">Saiba Mais</a></p>
                         </div>
                     </div>
                 </div>
@@ -87,7 +93,7 @@
                     <div class="container">
                         <div class="carousel-caption">
                             <h1>Vingadores Ultimato</h1>
-                            <p><a class="btn btn-lg btn-primary" href="#">Saiba Mais</a></p>
+                            <p><a class="btn btn-lg btn-primary" href="vingadores-trailer.html">Saiba Mais</a></p>
                         </div>
                     </div>
                 </div>
@@ -101,7 +107,7 @@
                     <div class="container">
                         <div class="carousel-caption text-end">
                             <h1>WarCraft</h1>
-                            <p><a class="btn btn-lg btn-primary" href="#">Saiba Mais</a></p>
+                            <p><a class="btn btn-lg btn-primary" href="warcraft-trailer.html">Saiba Mais</a></p>
                         </div>
                     </div>
                 </div>
@@ -114,6 +120,27 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
+        </div>
+        <div class="container lancamentos_media">
+            <div class="row lancamentos_media1">
+                <img clas="col-12" src="img/banner1.jpg" alt="">
+                <h5 clas="col-12">Guardiões da Galáxia Vol.2</h5>
+                <p><a class="btn btn-lg btn-primary" href="guardioes-da-galaxia-trailer.html">Saiba Mais</a></p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row lancamentos_media2">
+                <img clas="col-12" src="img/banner2.jpg" alt="">
+                <h5 clas="col-12">Vingadores Ultimato</h5>
+                <p><a class="btn btn-lg btn-primary" href="vingadores-trailer.html">Saiba Mais</a></p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row lancamentos_media3">
+                <img clas="col-12" src="img/banner3.jpg" alt="">
+                <h5 clas="col-12">Warcraft</h5>
+                <p><a class="btn btn-lg btn-primary" href="warcraft-trailer.html">Saiba Mais</a></p>
+            </div>
         </div>
         <div class="container destaques">
             <div class="row">
@@ -140,7 +167,7 @@
                 </div>
             </div>
             <br>
-            <p class="float-end"><a class="btn btn-lg btn-primary" href="#">+ Carregar Mais Destaques</a></p>
+            <p class="float-end"><a class="btn btn-lg btn-primary" href="pagina_destaques.html">+ Carregar Mais Destaques</a></p>
             <hr class="featurette-divider">
         </div>
         <div class="container avaliacoes">
@@ -473,7 +500,7 @@
                     </div>
                 </div>
                 <br>
-                <p class="float-end"><a class="btn btn-lg btn-primary" href="#">+ Carregar Mais Avaliações</a></p><br>
+                <p class="float-end"><a class="btn btn-lg btn-primary" href="comentarios.html">+ Carregar Mais Avaliações</a></p><br>
             </section>
         </div>
         <div class="container">
@@ -481,7 +508,7 @@
             <h2>Entrevistas & Making Of</h2>
         </div>
         <div class="container making-of">
-            <div class="col-4 row vid">
+            <div class="col-lg-4 row vid">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/0uJ8vMfk-c4"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -491,7 +518,7 @@
                 <p><strong>Diretor:</strong> Joe Russo, Anthony Russo;<br><strong>Roteiro:</strong> Christopher Markus e
                     Stephen McFeely;<br><strong>Estreia:</strong> 25/04/2019</p>
             </div>
-            <div class="col-4 row vid">
+            <div class="col-lg-4 row vid">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/9yZhEUkiSgk"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -501,7 +528,7 @@
                 <p><strong>Diretor:</strong> James Gunn;<br><strong>Roteiro:</strong> CJames
                     Gunn;<br><strong>Estreia:</strong> 27/04/2017</p>
             </div>
-            <div class="col-4 row vid">
+            <div class="col-lg-4 row vid">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/MeE3g1I_OzE"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -513,13 +540,13 @@
             </div>
         </div>
         <div class="container botao">
-            <p class="float-end"><a class="btn btn-lg btn-primary" href="#">+ Carregar Mais Entrevistas</a></p><br>
+            <p class="float-end"><a class="btn btn-lg btn-primary" href="entrevistas.html">+ Carregar Mais Entrevistas</a></p><br>
         </div>
         <div class="container final">
-            <div class="col-8 row">
+            <<div class="col-lg-8 col-md-6 col-sm-12 row noticias">
                 <a name="novidades" id="novidades"></a>
                 <h2>Novidades</h2>
-                <div class="row noticia">
+                <div class="col-md-12 row noticia">
                     <img class="col-6" src="img/noticia1.jpg">
                     <div class="col-6 row noticia_text">
                         <p>
@@ -527,7 +554,7 @@
                             href="noticia1.html">Ler Notícia</a></p>
                     </div>
                 </div>
-                <div class="row noticia">
+                <div class="col-md12 row noticia">
                     <img class="col-6" src="img/noticia2.jpg">
                     <div class="col-6 row noticia_text">
                         <p>
@@ -535,7 +562,7 @@
                             streaming</h5><br><a href="noticia2.html">Ler Notícia</a></p>
                     </div>
                 </div>
-                <div class="row noticia">
+                <div class="col-md-12 row noticia">
                     <img class="col-6" src="img/noticia3.jpg">
                     <div class="col-6 row noticia_text">
                         <p>
@@ -544,7 +571,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4 row sobre_text">
+            <div class="col-lg-4 col-md-12 col-sm-12 row sobre_text">
                 <h2>Sobre</h2>
                 <p>Esse site foi realizado para a matéria de Desenvolvimento de Interfaces WEB, no curso de Engenharia de Software, na PUC Minas (Pontífica Universidade Católica de Minas Gerais), com o intuito de aprimorar e praticar os conhecimentos adiquiridos durante o aprendizado da matéria. Todos os botões e links presentes na página são totalmente funcionais. A página foi projetada para se comportar de maneiras diferentes de acordo com o tamanho de tela que ela está sendo exibida, fique à vontade para testar tudo que ela tem a oferecer.</p>
                 <h2>Editorial</h2>
